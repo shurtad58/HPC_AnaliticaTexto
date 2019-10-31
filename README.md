@@ -1,6 +1,6 @@
-## HPC_AnaliticaTexto
+### HPC_AnaliticaTexto
 
-#OpenMP
+##OpenMP
 
 Se requiere utilizar #pragma omp paralelo para crear hilos
 
