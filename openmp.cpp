@@ -1,7 +1,7 @@
 #include <map>
-#include "mpi.h"
 #include <sstream>
 #include <string>
+#include <omp.h>
 
 typedef struct frec {
     int frec;
@@ -36,3 +36,9 @@ map<string, map<string, frec> > 0;
       getline(ip, title,   '\t');
       getline(ip, content, '\n');
     }
+
+    int main(int argc, char *argv[]) {
+    string files[3] = //{"./datasets/1.csv", "../datasets/2.csv", "../datasets/3.csv"};
+  
+  
+  }

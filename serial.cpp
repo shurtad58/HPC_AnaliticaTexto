@@ -1,7 +1,7 @@
 #include <map>
-#include "mpi.h"
-#include <string>
 #include <sstream>
+#include <string>
+
 
 typedef struct frec {
     int frec;
@@ -19,15 +19,10 @@ class contPal {
 ostream &operator<<(ostream &st, contPal &wc) {
   return st << wc.valor;
 
-map<string, map<string, frec> > 0;
-map<string, map<string, frec> > 1;
-map<string, map<string, frec> > 2;
+  map<string, map<string, frecuency> > table;
 
-MPI_Comm comm = MPI_COMM_WORLD;
-
-
-int main(int argc, char *argv[]) {
-    string files[3] = //{"./datasets/1.csv", "../datasets/2.csv", "../datasets/3.csv"};
+  int main(int argc, char *argv[]) {
+    string files[3] = //{"./articlespart1.csv", "./articlespart2.csv", "./articlespart3.csv"};
   
   
   }
