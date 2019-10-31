@@ -21,3 +21,18 @@ ostream &operator<<(ostream &st, contPal &wc) {
 
 map<string, map<string, frec> > 0;
 
+#pragma omp parallel
+  {
+    string index =   "";
+    string id =      "";
+    string title =   "";
+    string content = "";
+
+ while (ip.good()) {
+    #pragma omp critical
+    {
+      getline(ip, index,   '\t');
+      getline(ip, id,      '\t');
+      getline(ip, title,   '\t');
+      getline(ip, content, '\n');
+    }
