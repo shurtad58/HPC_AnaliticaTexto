@@ -1,4 +1,5 @@
 #include <map>
+#include "mpi.h"
 
 typedef struct frec {
     int frec;
@@ -15,3 +16,10 @@ class contPal {
 
 ostream &operator<<(ostream &st, contPal &wc) {
   return st << wc.valor;
+
+map<string, map<string, frec> > 0;
+map<string, map<string, frec> > 1;
+map<string, map<string, frec> > 2;
+
+MPI_Comm comm = MPI_COMM_WORLD;
+
